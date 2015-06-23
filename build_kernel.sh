@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export ARCH=arm
-export CROSS_COMPILE=/home/khusika/Documents/OS/WIP/GrandPrime/SM-G530H_KK_Opensource/arm-eabi-4.7/bin/arm-eabi
+export CROSS_COMPILE=/home/khristian/android/toolchains/gcc-arm-none-eabi-4_7-2014q2/bin/arm-none-eabi-
 mkdir output
 
 make -C $(pwd) O=output msm8916_sec_defconfig VARIANT_DEFCONFIG=msm8916_sec_fortuna3g_eur_defconfig SELINUX_DEFCONFIG=selinux_defconfig
